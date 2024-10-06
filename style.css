@@ -1,0 +1,247 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navegación */
+nav {
+    background-color: #007ACC;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 5spx 0; /* Espacio superior e inferior ajustado */
+}
+
+.logo-container img {
+    max-width: 10px; /* Reduce el ancho máximo del logo */
+    max-height: 250px; /* Reduce la altura máxima del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+/* Estilos para la sección */
+.values-section {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 60vh; /* Altura mínima de la sección */
+    background-color: #f0f8ff; /* Color de fondo suave */
+    padding: 20px;
+}
+
+/* Contenedor de contenido */
+.content-container {
+    max-width: 800px; /* Ancho máximo del contenido */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para el título */
+.values-section h1 {
+    font-size: 2.5em;
+    color: #007ACC;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para los párrafos */
+.values-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333333;
+    font-family: 'Georgia', serif; /* Cambia la fuente a una más elegante */
+    margin-bottom: 15px;
+}
+
+/* Negrita para los subtítulos dentro del párrafo */
+.values-section p strong {
+    color: #005C99;
+    font-weight: bold;
+}
+
+
+
+
+/* Reduction del marge entre sections */
+nav {
+    margin-bottom: 10px; /* Reducir espacio debajo del nav */
+}
+
+.gallery {
+  
+    padding-top: 10px; /* Reducir el espacio superior de la galería */
+    margin-top: 30px; /* Reducir el espacio entre el logo y la galería */
+}
+
+
+/* Contenido Principal */
+.main-content {
+    text-align: center;
+  
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    color: #007ACC;
+    font-size: 2.5em;
+}
+
+.main-content p {
+    font-size: 1.2em;
+}
+
+/* Galería de Fotos */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.gallery h2 {
+    color: #007ACC;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 2500px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #007ACC;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-form {
+    margin: 20px 0;
+}
+
+footer .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact-form label {
+    margin: 5px 0;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+}
+
+footer .contact-form button {
+    padding: 0px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #007ACC;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer .contact-form button:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+footer .rights {
+    margin-top: 20px;
+}
+
+footer .rights p {
+    font-size: 0.8em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        margin: 20px;
+        padding: 50px 10px;
+    }
+
+    footer .contact-form input,
+    footer .contact-form textarea {
+        width: 95%;
+    }
+
+    .gallery-container {
+        gap: 10px;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
